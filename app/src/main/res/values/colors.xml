@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorNavyBlue">#000080</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorItemBackground">#378d99</color>
+    <color name="colorTableItemBackground">#87ddc5</color>
+    <color name="colorVendorDetailsBackground">#dbb7e5</color>
+    <color name="colorCustomerDetailsBackground">#efc4d0</color>
+    <color name="colorCustomerDetailsBackground2">#cee5b7</color>
+    <color name="colorBtnAdd">#4bafbc</color>
+
+    <color name="side_nav_gradient_start">#3ca55c</color>
+    <color name="side_nav_gradient_end">#b5ac49</color>
+
+    <color name="side_nav_gradient_start1"> #16a085 </color>
+    <color name="side_nav_gradient_end1">#f4d03f</color>
+
+    <color name="customer_details_gradient_start">#727a17</color>
+    <color name="customer_details_gradient_end">#e4e4d9</color>
+
+    <color name="vendor_details_gradient_start">#4da0b0</color>
+    <color name="vendor_details_gradient_end">#d39d38</color>
+
+</resources>

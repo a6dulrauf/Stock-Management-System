@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCustomerActivity">
+
+    <LinearLayout
+        android:padding="@dimen/parent_activity_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="12">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:textStyle="bold"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/add_customer_customerName"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the Customer name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Company Name"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/add_customer_companyName"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the customer company name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Address"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/add_customer_Address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Enter the customer address"
+                    android:inputType="text"
+                    android:textSize="@dimen/home_sub_text_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Mobile No"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/add_customer_mobileNo"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the customer mobile number"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Email ID"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/add_customer_emailID"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the customer email id"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <Button
+                android:background="@drawable/shape_btn_add"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavyBlue"
+                android:id="@+id/add_customer_btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_sub_text_size"
+                android:text="ADD Customer"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

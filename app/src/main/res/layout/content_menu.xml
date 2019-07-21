@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MenuActivity"
+    tools:showIn="@layout/app_bar_menu"
+    android:padding="@dimen/parent_activity_padding">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="18">
+            <!--Purchase-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="PURCHASE"
+                    android:textColor="@color/colorNavyBlue"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_purchase_entry"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/add" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Purchase Entry"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_purchase_orders"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/purchase_orders" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Purchase Orders"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+
+                </LinearLayout>
+                <!--Purchase-->
+            </LinearLayout>
+
+            <!--Product-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="PRODUCT"
+                    android:textColor="@color/colorNavyBlue"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_product_list"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/product_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Product List"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_add_product"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/add" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Add Product"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Vendor-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="VENDOR"
+                    android:textColor="@color/colorNavyBlue"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_vendor_details"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/vendor_details1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Vendor Details"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_add_vendor"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/add_vendor1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Add Vendor"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+
+                </LinearLayout>
+                <!--Vendor-->
+
+
+            </LinearLayout>
+
+            <!--Sales-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="SALES"
+                    android:textColor="@color/colorNavyBlue"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_sales_entry"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/minus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Sales Entry"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_sales_order"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/sales_order" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Sales Orders"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Customer-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="CUSTOMER"
+                    android:textColor="@color/colorNavyBlue"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_customer_details"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/customer_details" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Customer Details"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_add_customer"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/add_customer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Add Customer"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Profit & Stock-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="PROFIT / STOCK"
+                    android:textColor="@color/colorNavyBlue"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_profitloss"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/profit_loss" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Profit/Loss"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/menu_img_stockonhand"
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/stock_on_hand2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Stock on hand"
+                        android:textColor="@color/colorNavyBlue"
+                        android:textSize="@dimen/home_sub_text_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

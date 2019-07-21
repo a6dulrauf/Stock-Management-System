@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchaseEntryActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="@dimen/parent_activity_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="14">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textStyle="bold"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <AutoCompleteTextView
+                    android:completionThreshold="1"
+                    android:id="@+id/purchase_entry_productName"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the product name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/purchase_entry_addProduct"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor Name"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <AutoCompleteTextView
+                    android:completionThreshold="1"
+                    android:id="@+id/purchase_entry_VendorName"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the vendor name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/purchase_entry_addVendor"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add_vendor1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase Quantity"
+                android:textSize="@dimen/home_sub_text_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/purchase_entry_purchaseQty"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:inputType="number"
+                    android:hint="Enter the purchase quantity"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase Date"
+                android:textSize="@dimen/home_sub_text_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <!--<DatePicker-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="5"-->
+                    <!--android:datePickerMode="calendar">-->
+                <!--</DatePicker>-->
+                <EditText
+                    android:id="@+id/purchase_entry_purchaseDate"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:inputType="date"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the purchase date"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase Price"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/purchase_entry_purchasePrice"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the price"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase Type"
+                android:textSize="@dimen/home_sub_text_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/purchase_entry_purchaseType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                </Spinner>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <Button
+                android:background="@drawable/shape_btn_add"
+                android:id="@+id/purchase_entry_btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/parent_activity_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:background="@drawable/shape_vendor_details"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/user_name" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/company1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/mail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:weightSum="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:textColor="@color/colorNavyBlue"
+                android:id="@+id/vendor_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="NAME"
+                android:textStyle="bold"
+                android:textSize="@dimen/home_sub_text_size"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorNavyBlue"
+                android:id="@+id/vendor_details_contact"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Contact"
+                android:textSize="@dimen/home_sub_text_size"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorNavyBlue"
+                android:id="@+id/vendor_details_company"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Company"
+                android:textSize="@dimen/home_sub_text_size"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorNavyBlue"
+                android:id="@+id/vendor_details_address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Address"
+                android:textSize="@dimen/home_sub_text_size"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorNavyBlue"
+                android:id="@+id/vendor_details_email"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Email"
+                android:textSize="@dimen/home_sub_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/product_edit"
+                android:id="@+id/vendor_details_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/product_delete"
+                android:id="@+id/vendor_details_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <!---
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/vendor_details_purchaseOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/product_purchase" />
+
+        -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

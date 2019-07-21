@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Stock Management System</string>
+
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_purchase_entry">Purchase Entry</string>
+    <string name="title_activity_purchase_orders">Purchase Orders</string>
+    <string name="title_activity_product_list">Product List</string>
+    <string name="title_activity_add_product">Add/Update Product</string>
+    <string name="title_activity_vendor_details">Vendor Details</string>
+    <string name="title_activity_add_vendor">Add/Update Vendor</string>
+    <string name="title_activity_sales_entry">Sales Entry</string>
+    <string name="title_activity_sales_orders">Sales Orders</string>
+    <string name="title_activity_customer_details">Customer Details</string>
+    <string name="title_activity_add_customer">Add/Update Customer</string>
+    <string name="title_activity_profit_loss">Profit Loss</string>
+    <string name="title_activity_stock_on_hand">Stock On Hand</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Stock Management System</string>
+    <string name="nav_header_subtitle">By Infinite Generics</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

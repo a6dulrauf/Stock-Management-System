@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalesEntryActivity">
+
+    <LinearLayout
+        android:padding="@dimen/parent_activity_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="14">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textStyle="bold"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/sales_entry_productName"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter product name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"/>
+                <ImageView
+                    android:id="@+id/sales_entry_addProduct"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <AutoCompleteTextView
+                    android:completionThreshold="1"
+                    android:id="@+id/sales_entry_customerName"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter customer name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/sales_entry_addCustomer"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add_customer"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sales Quantity"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/sales_entry_salesQuantity"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter sales quantity"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sales Date"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <!--CHANGE THIS EDIT TEXT TO CALENDAR-->
+                <EditText
+                    android:id="@+id/sales_entry_salesDate"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter sales date"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sales Price"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/sales_entry_salesPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Enter the Sales Price"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/home_sub_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sales Type"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/sales_entry_salesType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
+                </Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <Button
+                android:background="@drawable/shape_btn_add"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavyBlue"
+                android:id="@+id/sales_entry_btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

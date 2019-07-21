@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "619698329886",
+    "firebase_url": "https://stockmanagementsystem-3ed28.firebaseio.com",
+    "project_id": "stockmanagementsystem-3ed28",
+    "storage_bucket": "stockmanagementsystem-3ed28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619698329886:android:58b76a4af1a9b43d",
+        "android_client_info": {
+          "package_name": "com.generics.infinite.stockmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619698329886-olnk92b4463afk15qgkk998tu6ngai2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuK7RoNjXYE26GEg1JjqzyYmKZ4WWFr8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619698329886-olnk92b4463afk15qgkk998tu6ngai2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

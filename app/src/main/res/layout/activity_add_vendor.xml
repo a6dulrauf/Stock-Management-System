@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddVendorActivity">
+
+    <LinearLayout
+        android:padding="@dimen/parent_activity_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="12">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor Name"
+                android:textStyle="bold"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/add_vendor_vendorName"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the vendor name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor Company Name"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/add_vendor_companyName"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the vendor company name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor Address"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/add_vendor_Address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Enter the vendor address"
+                    android:inputType="text"
+                    android:textSize="@dimen/home_sub_text_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor Mobile No"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/add_vendor_mobileNo"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the vendor mobile number"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor Email ID"
+                android:textSize="@dimen/home_sub_text_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/add_vendor_emailID"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/home_sub_text_size"
+                    android:hint="Enter the vendor email id"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <Button
+                android:background="@drawable/shape_btn_add"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavyBlue"
+                android:id="@+id/add_vendor_btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_sub_text_size"
+                android:text="ADD Vendor"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="32">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:background="@drawable/table_border"
+            android:id="@+id/sales_orders_datatxtSrNo"
+            android:text="SR No."
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="@dimen/purchase_orders_table_text_size"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:background="@drawable/table_border"
+            android:id="@+id/sales_orders_datatxtDate"
+            android:text="Date"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="@dimen/purchase_orders_table_text_size"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:background="@drawable/table_border"
+            android:id="@+id/sales_orders_dataproductName"
+            android:text="Product Name"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="@dimen/purchase_orders_table_text_size"
+            android:layout_weight="4" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:background="@drawable/table_border"
+            android:id="@+id/sales_orders_dataqty"
+            android:text="Quantity"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="@dimen/purchase_orders_table_text_size"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:background="@drawable/table_border"
+            android:id="@+id/sales_orders_datapriceunit"
+            android:text="Price/Unit"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="@dimen/purchase_orders_table_text_size"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:background="@drawable/table_border"
+            android:id="@+id/sales_orders_datatotalAmount"
+            android:text="Total Amount"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="@dimen/purchase_orders_table_text_size"
+            android:layout_weight="4" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:background="@drawable/table_border"
+            android:id="@+id/sales_orders_datasalesType"
+            android:text="Purchase Type"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="@dimen/purchase_orders_table_text_size"
+            android:layout_weight="4" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:background="@drawable/table_border"
+            android:id="@+id/sales_orders_dataCustomerName"
+            android:text="Vendor Name"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="@dimen/purchase_orders_table_text_size"
+            android:layout_weight="4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:layout_weight="2"
+            android:background="@drawable/table_border"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/sales_orders_dataedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/product_edit" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/purchase_orders_textview_height"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:background="@drawable/table_border">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sales_orders_datadelete"
+                android:src="@drawable/product_delete"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
