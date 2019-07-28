@@ -17,6 +17,7 @@ import com.generics.infinite.stockmanagementsystem.model.Customer;
 import com.generics.infinite.stockmanagementsystem.model.Product;
 import com.generics.infinite.stockmanagementsystem.model.SalesEntry;
 import com.generics.infinite.stockmanagementsystem.utilities.Helper;
+import com.generics.infinite.stockmanagementsystem.utilities.Key;
 import com.generics.infinite.stockmanagementsystem.utilities.Message;
 
 import java.text.SimpleDateFormat;
@@ -51,12 +52,19 @@ public class SalesEntryActivity extends AppCompatActivity implements View.OnClic
 
     List<Product> productList;
     List<Customer> customerList;
-
+    private boolean isSalesEditable = false;
+    private SalesEntry editableSalesEntry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sales_entry);
+
+        isSalesEditable = false;
+        btnAdd.setText("ADD");
+        String value = getIntent().getStringExtra(Key.KEY_SALES_ORDERS_EDIT);
+        if(value != null && value.contentEquals(Key.VALUE_SALES_ORDERS_EDIT))
+
         initComponents();
         updateDateNow();
     }

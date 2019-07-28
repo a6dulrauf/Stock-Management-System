@@ -119,7 +119,10 @@ public class PurchaseEntryActivity extends AppCompatActivity implements View.OnC
 
         switch (v.getId()){
             case R.id.purchase_entry_btnAdd:
-                addPurchaseEntryWithoutUpdate();
+                if(isPurchaseEditable)
+                    addPurchaseEntry();
+                else
+                    addPurchaseEntryWithoutUpdate();
                 break;
             case R.id.purchase_entry_addProduct:
                 Helper.navigateActivity(this,AddProductActivity.class);
@@ -194,7 +197,7 @@ public class PurchaseEntryActivity extends AppCompatActivity implements View.OnC
                 Helper.showMsg(this,Message.msgUpdatedSuccessFully,Message.successType);
                 finish();
 
-            }else{
+            } else{
 
                 if(!isPurchaseEditable){
 
@@ -281,7 +284,8 @@ public class PurchaseEntryActivity extends AppCompatActivity implements View.OnC
                 Helper.showMsg(this, Message.msgAddedSuccessFully, Message.successType);
                 finish();
             }
-        }else{
+        }
+        else{
             checkAllEmptyMsg = Helper.validateFields(vendorName,productName,qty,price,date,purchaseType);
             String msg="";
             if(!isProductNameValid()&&!isVendorNameValid()){

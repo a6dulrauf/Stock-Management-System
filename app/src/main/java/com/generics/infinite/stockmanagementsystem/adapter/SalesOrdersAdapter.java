@@ -15,6 +15,7 @@ import com.generics.infinite.stockmanagementsystem.R;
 import com.generics.infinite.stockmanagementsystem.SalesOrderActivity;
 import com.generics.infinite.stockmanagementsystem.model.SalesEntry;
 import com.generics.infinite.stockmanagementsystem.utilities.Helper;
+import com.generics.infinite.stockmanagementsystem.utilities.Key;
 import com.generics.infinite.stockmanagementsystem.utilities.Message;
 
 import java.util.List;
@@ -120,7 +121,9 @@ public class SalesOrdersAdapter extends BaseAdapter {
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Helper.showMsg(context,"EDIT",Message.infoType);
+               Helper.editableSalesEntry = salesEntry;
+               Helper.navigateActivity(context,SalesEntry.class, Key.KEY_SALES_ORDERS_EDIT,Key.VALUE_SALES_ORDERS_EDIT);
+               activity.finish();
             }
         });
 
